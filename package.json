@@ -1,0 +1,27 @@
+{
+  "name": "store_locator_api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@mapbox/mapbox-gl-geocoder": "^4.7.4",
+    "@mapbox/mapbox-sdk": "^0.13.2",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "geojson": "^0.5.0",
+    "mongoose": "^5.8.3",
+    "node-geocoder": "^3.25.0",
+    "request": "2.83.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}

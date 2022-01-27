@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+      integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ="
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Store Locator</title>
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico?q=1" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
+      <div class="container">
+        <a href="/index.html" class="navbar-brand">Doug's Mapbox Playground</a>
+        <div class="collapse navbar-collapse" id="navmenu"></div>
+      </div>
+    </nav>
+
+    <!-- Showcase -->
+    <section
+      class="bg-dark text-light p-5 p-lg-0 pt-lg-5 text-center text-sm-start"
+    >
+      <div class="container">
+        <div class="d-sm-flex align-items-center justify-content-between">
+          <div w-50>
+            <h1>Store <span class="text-warning"> Locator </span></h1>
+            <h2>Node.js GeoJSON API & App</h2>
+            <p class="lead my-4">
+              Inspried by Traversy Media's <i>Store Locator</i> video on
+              <a href="https://youtu.be/9FQrFah9rnc">YouTube</a>.
+              <br />
+              Node/Express/Mongo API with GeoJSON location field for store
+              locations.
+              <br />
+              A simple vanilla JS frontend using the Mapbox Library.
+              <br />
+              I made some modifications including changing the GeoCoding fuction
+              to use to Mapbox API rather than the Map Quest API.
+            </p>
+          </div>
+          <img
+            class="img-fluid w-25 d-none d-sm-block"
+            src="/img/undraw_gone_shopping_vwmc.svg"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="p-5">
+      <div class="container">
+        <div class="container my-3">
+          <h2 class="text-center">
+            <i class="fas fa-map-marked mr-4"></i> Store Locator
+          </h2>
+          <a href="add.html" class="btn btn-success mb-4">Add Store</a>
+          <div
+            id="map"
+            style="width: 100%; height: 500px; border-radius: 5px"
+          ></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="p-5 bg-dark text-white text-center position-relative">
+      <div class="container">
+        <p class="small">Doug Chuchro &#124; doug@chuchro.net</p>
+        <a href="#" class="position-absolute bottom-0 end-0 p-5">
+          <i class="bi bi-arrow-up-circle h1"></i>
+        </a>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.js"></script>
+    <script src="js/map.js"></script>
+  </body>
+</html>
